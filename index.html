@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <table>
+            <tr class="red">
+                <td colspan="3"><input id="display" readonly></td>
+                <td><button onclick="cleardisplay()">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="append('1')">1</button></td>
+                <td><button onclick="append('2')">2</button></td>
+                <td><button onclick="append('3')">3</button></td>
+                <td><button class="op" onclick="append('+')">+</button></td>
+            </tr> 
+            <tr>
+                <td><button onclick="append('4')">4</button></td>
+                <td><button onclick="append('5')">5</button></td>
+                <td><button onclick="append('6')">6</button></td>
+                <td><button class="op" onclick="append('-')">-</button></td>
+            </tr>   
+            <tr>
+                <td><button onclick="append('7')">7</button></td>
+                <td><button onclick="append('8')">8</button></td>
+                <td><button onclick="append('9')">9</button></td>
+                <td><button class="op" onclick="append('*')">*</button></td>
+            </tr>  
+            <tr>
+                <td><button class="op" onclick="append('/')">/</button></td>
+                <td><button onclick="append('0')">0</button></td>
+                <td><button class="op" onclick="append('.')">.</button></td>
+                <td><button class="op" onclick="validate()">=</button></td>
+            </tr> 
+        </table>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
